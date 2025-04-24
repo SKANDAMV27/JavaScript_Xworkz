@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="Form.js">
+        
+    </script>
+</head>
+<body>
+    
+    <form name="formName" onsubmit="submitForm()">
+        <div>
+            <label for="nameId">Name</label>
+            <span style="color: red;">*</span>
+            <span>:</span>
+            <input type="text" id="name" name="nameName" required>
+            <br>
+            <label for="numId">Number</label>
+            <span style="color: red;">*</span>
+            <input type="number" id="numId" name="numberNumber" required>
+            <br>
+            <label for="emaiId">Email</label>
+            <span style="color: red;">*</span>
+            <span>:</span>
+            <input type="text" id="emailId" name="emailEmail" required>
+       
+        <div>
+            <button type="submit" value="submit">Submit</button>
+            <button type="reset" value="clear">Clear</button>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
