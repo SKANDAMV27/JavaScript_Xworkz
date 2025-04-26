@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <script src="Form.js">
-        
+
     </script>
 </head>
+
 <body>
-    
-    <form name="formName" onsubmit="submitForm()">
+
+    <form name="formName" onsubmit="return submitForm()">
         <div>
             <label for="nameId">Name</label>
             <span style="color: red;">*</span>
             <span>:</span>
-            <input type="text" id="name" name="nameName" required>
+            <input type="text" id="name" name="nameName" placeholder="Name" required>
             <br>
+
             <label for="numId">Number</label>
             <span style="color: red;">*</span>
-            <input type="number" id="numId" name="numberNumber" required>
+            <input type="number" id="numId" name="numberNumber" placeholder="Number" required>
+
             <br>
             <label for="emaiId">Email</label>
             <span style="color: red;">*</span>
             <span>:</span>
-            <input type="text" id="emailId" name="emailEmail" required>
-       
-        <div>
-            <button type="submit" value="submit">Submit</button>
-            <button type="reset" value="clear">Clear</button>
+            <input type="text" id="emailId" name="emailEmail" placeholder="Email" required>
+            <br>
+            <label for="genderId">Gender</label>
+            <span style="color: red;">*</span>
+            <span>:</span>
+            <label>Male</label>
+            <input type="radio" name="gender" value="Male" id="Male">
+            <label>Female</label>
+            <input type="radio" name="gender" value="Female" id="Female">
+            <br>
+            <label for="passwardId">passward</label>
+            <span style="color:red">*</span>
+            <span>:</span>
+            <input type="text" id="passwardId" name="passwardPassward" placeholder="Passward" required>
+            <br>
+            <label for="correctId">Currect-Passward</label>
+            <span style="color:red">*</span>
+            <span>:</span>
+            <input type="text" id="correctId" name="correctCorrect" placeholder="Correct-Passward" required>
+            <br> 
+            <label for="AgeId">Age</label>
+            <span style="color:red">*</span>
+            <span>:</span>
+            <input type="number" id="agetId" name="ageAge" placeholder="Age" required>
+           
+                
+                
+
+            <div>
+                <button type="submit" value="submit">Submit</button>
+                <button type="reset" value="clear">Clear</button>
+            </div>
         </div>
-    </div>
     </form>
 </body>
+
 </html>
