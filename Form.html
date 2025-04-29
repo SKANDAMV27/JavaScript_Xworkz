@@ -3,62 +3,68 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <script src="Form.js">
-
-    </script>
+    <script src="Form.js" defer></script>
 </head>
 
 <body>
+    <span id="nameId">Yes</span>
+    <button onclick="onClick()">Click me</button>
+    <br>
+    <span class="numberClass">No</span>
+    <button onclick="onClick()">Click me</button>
+    <br>
+    <span name="nameName">Hello</span>
+    <button onclick="onClick()">Click me</button>
+    <br>
+    <span tagName="tagName">Tag</span>
+    <button onclick="onClick()">Click me</button>
 
     <form name="formName" onsubmit="return submitForm()">
         <div>
+            <br>
             <label for="nameId">Name</label>
-            <span style="color: red;">*</span>
-            <span>:</span>
-            <input type="text" id="name" name="nameName" placeholder="Name" required>
+            <span style="color: red;">*</span>:
+            <input type="text" id="nameId" name="nameName" placeholder="Name" required>
+           
             <br>
 
             <label for="numId">Number</label>
-            <span style="color: red;">*</span>
-            <input type="number" id="numId" name="numberNumber" placeholder="Number" required>
+            <span style="color: red;">*</span>:
+            <input type="text" id="numId" name="numberNumber" placeholder="Number" required>
+            <br>
 
+            <label for="emailId">Email</label>
+            <span style="color: red;">*</span>:
+            <input type="email" id="emailId" name="emailEmail" placeholder="Email" required>
             <br>
-            <label for="emaiId">Email</label>
-            <span style="color: red;">*</span>
-            <span>:</span>
-            <input type="text" id="emailId" name="emailEmail" placeholder="Email" required>
-            <br>
-            <label for="genderId">Gender</label>
-            <span style="color: red;">*</span>
-            <span>:</span>
+
+            <label>Gender</label>
+            <span style="color: red;">*</span>:
             <label>Male</label>
-            <input type="radio" name="gender" value="Male" id="Male">
+            <input type="radio" name="gender" value="Male" required>
             <label>Female</label>
-            <input type="radio" name="gender" value="Female" id="Female">
+            <input type="radio" name="gender" value="Female" required>
             <br>
-            <label for="passwardId">passward</label>
-            <span style="color:red">*</span>
-            <span>:</span>
-            <input type="text" id="passwardId" name="passwardPassward" placeholder="Passward" required>
+
+            <label for="passwordId">Password</label>
+            <span style="color:red">*</span>:
+            <input type="password" id="passwordId" name="passwardPassward" placeholder="Password" required>
             <br>
-            <label for="correctId">Currect-Passward</label>
-            <span style="color:red">*</span>
-            <span>:</span>
-            <input type="text" id="correctId" name="correctCorrect" placeholder="Correct-Passward" required>
-            <br> 
-            <label for="AgeId">Age</label>
-            <span style="color:red">*</span>
-            <span>:</span>
-            <input type="number" id="agetId" name="ageAge" placeholder="Age" required>
-           
-                
-                
+
+            <label for="confirmId">Confirm Password</label>
+            <span style="color:red">*</span>:
+            <input type="password" id="confirmId" name="correctCorrect" placeholder="Confirm Password" required>
+            <br>
+
+            <label for="ageId">Age</label>
+            <span style="color:red">*</span>:
+            <input type="number" id="ageId" name="ageAge" placeholder="Age" required>
+            <br>
 
             <div>
-                <button type="submit" value="submit">Submit</button>
-                <button type="reset" value="clear">Clear</button>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
             </div>
         </div>
     </form>
