@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <span id="nameId">Yes</span>
+    <!-- <span id="nameId">Yes</span>
     <button onclick="onClick()">Click me</button>
     <br>
     <span class="numberClass">No</span>
@@ -18,7 +18,7 @@
     <button onclick="onClick()">Click me</button>
     <br>
     <span tagName="tagName">Tag</span>
-    <button onclick="onClick()">Click me</button>
+    <button onclick="onClick()">Click me</button> -->
 
     <form name="formName" onsubmit="return submitForm()">
         <div>
@@ -26,17 +26,20 @@
             <label for="nameId">Name</label>
             <span style="color: red;">*</span>:
             <input type="text" id="nameId" name="nameName" placeholder="Name" required>
+            <span style="color: brown;" id="nameErrorId"></span>
            
             <br>
 
             <label for="numId">Number</label>
             <span style="color: red;">*</span>:
-            <input type="text" id="numId" name="numberNumber" placeholder="Number" required>
+            <input type="number" id="numId" name="numberNumber" placeholder="Number" required>
+            <span style="color: aqua;" id="numberErrorId"></span>
             <br>
 
-            <label for="emailId">Email</label>
+           <label for="emailId">Email</label>
             <span style="color: red;">*</span>:
             <input type="email" id="emailId" name="emailEmail" placeholder="Email" required>
+            <span style="color: wheat;" id="emailErrorId"></span>
             <br>
 
             <label>Gender</label>
@@ -50,21 +53,23 @@
             <label for="passwordId">Password</label>
             <span style="color:red">*</span>:
             <input type="password" id="passwordId" name="passwardPassward" placeholder="Password" required>
+            <span style="color: bisque;" id="passwordErrorId"></span>
             <br>
 
             <label for="confirmId">Confirm Password</label>
             <span style="color:red">*</span>:
-            <input type="password" id="confirmId" name="correctCorrect" placeholder="Confirm Password" required>
+            <input type="password" id="confirmId" name="correctCorrect" placeholder="Confirm Password" required> 
             <br>
 
             <label for="ageId">Age</label>
             <span style="color:red">*</span>:
             <input type="number" id="ageId" name="ageAge" placeholder="Age" required>
-            <br>
+            <span style="color: black;" id="ageErrorId"></span>
+            <br> 
 
             <div>
                 <button type="submit">Submit</button>
-                <button type="reset">Clear</button>
+                <button type="reset" value="Clear" clearform="ClearForm()">Clear</button>
             </div>
         </div>
     </form>
