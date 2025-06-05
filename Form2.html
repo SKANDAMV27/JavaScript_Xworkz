@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .redColor{
+            color: red;
+        }
+    </style>
+    <script src="Form2.js"></script>
+</head>
+<body>
+    <form name="formName" onsubmit="return validate()">
+        <div>
+            <label for="nameId">Name</label>
+            <span class="redColor">*</span>
+            <span>:</span>
+            <input type="text" id="nameId" name="nameName" required>
+        </div>
+        <div>
+            <label for="ageId">Email</label>
+            <span class="redColor">*</span>
+            <span>:</span>
+            <input type="text" id="ageId" name="emailEmail" required>
+        </div>
+        <div>
+            <label for="passwordId">Password</label>
+            <span class="redColor">*</span>
+            <span>:</span>
+            <input type="password" id="passwordId" name="passwordPassword" requird>
+        </div>
+        <div>
+            <label for="conformid">Conform Password</label>
+            <span class="redColor">*</span>
+            <span>:</span>
+            <input type="password" id="conformid" name="conformConform" required>
+        </div>
+        <div>
+            <label for="languageLanguage">Programing Language</label>
+            <span class="redColor">*</span>
+            <span>:</span>
+            <label for="">Java</label>
+            <input type="checkbox" id="languageId" name="languageLanguage" required>
+             <label for="">Python</label>
+            <input type="checkbox" id="languageId" name="languageLanguage" required>
+             <label for="">C</label>
+            <input type="checkbox" id="languageId" name="languageLanguage" required>
+            <label for="">C++</label>
+            <input type="checkbox" id="languageId" name="languageLanguage" required>
+            <label for="">HHTML</label>
+            <input type="checkbox" id="languageId" name="languageLanguage" required>
+            <label for="">SQL</label>
+            <input type="checkbox" id="languageId" name="languageLanguage" required>
+        </div>
+        <div>
+            <label>Gender</label>
+            <span class="redColor">*</span>
+            <span>:</span>
+            <label>Male</label>
+            <input type="radio" id="genderId" name="genderGender" required> 
+              <label>Female</label>
+            <input type="radio" id="genderId" name="genderGender" required> 
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</body>
+</html>
