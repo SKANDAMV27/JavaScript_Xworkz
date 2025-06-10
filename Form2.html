@@ -5,63 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <style>
-        .redColor{
+        .redColor {
             color: red;
         }
     </style>
-    <script src="Form2.js"></script>
+    <script src="Form2.js" defer></script>
 </head>
 <body>
     <form name="formName" onsubmit="return validate()">
         <div>
             <label for="nameId">Name</label>
-            <span class="redColor">*</span>
-            <span>:</span>
+            <span class="redColor">*</span> :
             <input type="text" id="nameId" name="nameName" required>
         </div>
         <div>
             <label for="ageId">Email</label>
-            <span class="redColor">*</span>
-            <span>:</span>
+            <span class="redColor">*</span> :
             <input type="text" id="ageId" name="emailEmail" required>
         </div>
         <div>
             <label for="passwordId">Password</label>
-            <span class="redColor">*</span>
-            <span>:</span>
-            <input type="password" id="passwordId" name="passwordPassword" requird>
+            <span class="redColor">*</span> :
+            <input type="password" id="passwordId" name="passwordPassword" required>
         </div>
         <div>
-            <label for="conformid">Conform Password</label>
-            <span class="redColor">*</span>
-            <span>:</span>
-            <input type="password" id="conformid" name="conformConform" required>
+            <label for="conformid">Confirm Password</label>
+            <span class="redColor">*</span> :
+            <input type="password" id="conformid" name="conformpasswords" required>
         </div>
         <div>
-            <label for="languageLanguage">Programing Language</label>
-            <span class="redColor">*</span>
-            <span>:</span>
-            <label for="">Java</label>
-            <input type="checkbox" id="languageId" name="languageLanguage" required>
-             <label for="">Python</label>
-            <input type="checkbox" id="languageId" name="languageLanguage" required>
-             <label for="">C</label>
-            <input type="checkbox" id="languageId" name="languageLanguage" required>
-            <label for="">C++</label>
-            <input type="checkbox" id="languageId" name="languageLanguage" required>
-            <label for="">HHTML</label>
-            <input type="checkbox" id="languageId" name="languageLanguage" required>
-            <label for="">SQL</label>
-            <input type="checkbox" id="languageId" name="languageLanguage" required>
+            <label>Programming Language</label>
+            <span class="redColor">*</span> :
+            <label>Java</label>
+            <input type="checkbox" name="languageLanguage" value="Java">
+            <label>Python</label>
+            <input type="checkbox" name="languageLanguage" value="Python">
+            <label>C</label>
+            <input type="checkbox" name="languageLanguage" value="C">
+            <label>C++</label>
+            <input type="checkbox" name="languageLanguage" value="C++">
+            <label>HTML</label>
+            <input type="checkbox" name="languageLanguage" value="HTML">
+            <label>SQL</label>
+            <input type="checkbox" name="languageLanguage" value="SQL">
         </div>
         <div>
             <label>Gender</label>
-            <span class="redColor">*</span>
-            <span>:</span>
+            <span class="redColor">*</span> :
             <label>Male</label>
-            <input type="radio" id="genderId" name="genderGender" required> 
-              <label>Female</label>
-            <input type="radio" id="genderId" name="genderGender" required> 
+            <input type="radio" name="genderGender" value="Male">
+            <label>Female</label>
+            <input type="radio" name="genderGender" value="Female">
         </div>
         <div>
             <button type="submit">Submit</button>
